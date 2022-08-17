@@ -33,6 +33,7 @@
 
 //alert(`Привет, ${user}`);
 
+/*  Закомментированно на время практики
 let incr = 10,
     decr = 10;
 incr++;
@@ -56,3 +57,4 @@ console.log(isClose || !isChecked);
 
 
 console.log(2 + 2 * 2 !== 6);
+*/
