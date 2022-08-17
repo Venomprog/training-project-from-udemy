@@ -76,6 +76,16 @@ body{
   }
   
   /*--------------------*/
+  /* Some styles for container of the page(Некоторые стили для контента в контейнере)*/
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+   /*--------------------*/
 
+  /*Add files to style.min.css (импорт внешних файлов в главный файл для компиляции в style.min.css*/
 
 @import "blocks/header";
+@import "blocks/welcome";
+
+  /*--------------------*/
