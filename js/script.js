@@ -58,3 +58,22 @@ console.log(isClose || !isChecked);
 
 console.log(2 + 2 * 2 !== 6);
 */
+
+
+if (4 == 9){
+    console.log('Ok!');
+} else {
+    console.log('Error');
+}
+
+const num = 50;
+
+if (num < 49){
+    console.log('Error');
+} else if (num > 100) {
+    console.log('too much');
+} else {
+    console.log('Ok');
+}
+/*Тирнарный оператор*/
+(num === 50) ? console.log('Tir Ok') : console.log('Error tir');
