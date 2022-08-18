@@ -1,3 +1,6 @@
+/* Закомментил т.к. выполнил практику по уроку
+
+
 let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 let lastFilm = prompt('Один из последних фильмов?', '');
 let rating = prompt('Оцените этот фильм', '');
@@ -12,9 +15,9 @@ let personalMovieDB = {
     genres:[],
     privat: false
 };
-
 personalMovieDB.movies[lastFilm] = rating;
 personalMovieDB.movies[a] = b;
 
-
 console.log(personalMovieDB);
+
+*/
