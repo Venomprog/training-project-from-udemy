@@ -66,14 +66,32 @@ if (4 == 9){
     console.log('Error');
 }
 
+
+
+// if (num < 49){
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('too much');
+// } else {
+//     console.log('Ok');
+// }
+// /*Тирнарный оператор*/
+// (num === 50) ? console.log('Tir Ok') : console.log('Error tir');
+
 const num = 50;
 
-if (num < 49){
-    console.log('Error');
-} else if (num > 100) {
-    console.log('too much');
-} else {
-    console.log('Ok');
+switch (num){
+    case 49:
+        console.log('Ne verno');
+        break;
+    case 100:
+        console.log('Ne verno');
+        break;
+    case 50:
+        console.log('Verno!');
+        break;
+    default:
+        console.log('Ne v etot raz');
+        break;
 }
-/*Тирнарный оператор*/
-(num === 50) ? console.log('Tir Ok') : console.log('Error tir');
+
