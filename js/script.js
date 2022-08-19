@@ -60,11 +60,11 @@ console.log(2 + 2 * 2 !== 6);
 */
 
 
-if (4 == 9){
-    console.log('Ok!');
-} else {
-    console.log('Error');
-}
+// if (4 == 9){
+//     console.log('Ok!');
+// } else {
+//     console.log('Error');
+// }
 
 
 
@@ -78,20 +78,36 @@ if (4 == 9){
 // /*Тирнарный оператор*/
 // (num === 50) ? console.log('Tir Ok') : console.log('Error tir');
 
-const num = 50;
+// const num = 50;
 
-switch (num){
-    case 49:
-        console.log('Ne verno');
-        break;
-    case 100:
-        console.log('Ne verno');
-        break;
-    case 50:
-        console.log('Verno!');
-        break;
-    default:
-        console.log('Ne v etot raz');
-        break;
+// switch (num){
+//     case 49:
+//         console.log('Ne verno');
+//         break;
+//     case 100:
+//         console.log('Ne verno');
+//         break;
+//     case 50:
+//         console.log('Verno!');
+//         break;
+//     default:
+//         console.log('Ne v etot raz');
+//         break;
+// }
+
+// const hamburger = true;
+// const fries = true;
+
+// if (hamburger && fries){
+//     console.log('я сыт!');
+// }
+
+const hamburger = 3;
+const fries = 1;
+const cola = 0;
+
+if (hamburger === 3 && cola ===1 && fries === 1){
+    console.log('я сыт!');
+} else {
+    console.log('Мы уходим!');
 }
-
