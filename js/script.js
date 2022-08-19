@@ -102,14 +102,29 @@ console.log(2 + 2 * 2 !== 6);
 //     console.log('я сыт!');
 // }
 
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
+
+// console.log(hamburger === 3 && cola ===1 && fries === 1);
+
+// if (hamburger === 3 && cola ===1 && fries === 1){
+//     console.log('я сыт!');
+// } else {
+//     console.log('Мы уходим!');
+// }
+
 const hamburger = 3;
-const fries = 1;
+const fries = 0;
 const cola = 0;
 
-console.log(hamburger === 3 && cola ===1 && fries === 1);
-
-if (hamburger === 3 && cola ===1 && fries === 1){
-    console.log('я сыт!');
+if (hamburger || cola || fries){
+    console.log('USe kaif');
 } else {
     console.log('Мы уходим!');
 }
+
+
+let alexReport, johnReport, dinReport, samReport = 'done';
+
+console.log(alexReport || johnReport || dinReport || samReport);
