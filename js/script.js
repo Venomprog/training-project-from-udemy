@@ -106,6 +106,8 @@ const hamburger = 3;
 const fries = 1;
 const cola = 0;
 
+console.log(hamburger === 3 && cola ===1 && fries === 1);
+
 if (hamburger === 3 && cola ===1 && fries === 1){
     console.log('я сыт!');
 } else {
