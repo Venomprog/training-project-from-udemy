@@ -148,9 +148,9 @@ let num = 50;
 // while (num <= 55);
 
 for (let i = 1; i < 10; i++){
-    if (i === 6){
+    if (i%2 == 0){ // Если остаток от деления равен 0 (чётное число)
         // break;
-        continue;
+        continue; // Пропускает чётные числа
     }
     console.log(i);
 }
