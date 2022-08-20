@@ -114,18 +114,44 @@ console.log(2 + 2 * 2 !== 6);
 //     console.log('Мы уходим!');
 // }
 
-const hamburger = 3;
-const fries = 3;
-const cola = 0;
-const nuggets = 2;
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2;
 
-if (hamburger === 3 && cola === 2 || fries === 3 && nuggets === 2){
-    console.log('USe kaif');
-} else {
-    console.log('Мы уходим!');
+// if (hamburger === 3 && cola === 2 || fries === 3 && nuggets === 2){
+//     console.log('USe kaif');
+// } else {
+//     console.log('Мы уходим!');
+// }
+
+
+// let alexReport, johnReport, dinReport, samReport = 'done';
+
+// console.log(alexReport || johnReport || dinReport || samReport);
+
+
+
+/*Lesson 22 Udemy */
+
+let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// } 
+// while (num <= 55);
+
+for (let i = 1; i < 10; i++){
+    if (i === 6){
+        break;
+    }
+    console.log(i);
 }
 
 
-let alexReport, johnReport, dinReport, samReport = 'done';
-
-console.log(alexReport || johnReport || dinReport || samReport);
