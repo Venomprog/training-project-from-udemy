@@ -115,10 +115,11 @@ console.log(2 + 2 * 2 !== 6);
 // }
 
 const hamburger = 3;
-const fries = 0;
+const fries = 3;
 const cola = 0;
+const nuggets = 2;
 
-if (hamburger || cola || fries){
+if (hamburger === 3 && cola === 2 || fries === 3 && nuggets === 2){
     console.log('USe kaif');
 } else {
     console.log('Мы уходим!');
