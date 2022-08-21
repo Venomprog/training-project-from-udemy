@@ -184,7 +184,7 @@ first: for (let i = 0; i < 3; i++){
         for (let j = 0; j < 3; j++){
             console.log(`Second level: ${j}`);
             for (let k = 0; k < 5; k++){
-                if (k === 2) continue first;
+                if (k === 2) continue first; // Пропускает цикл второго уровня и переходит к первому
                 console.log(`Third level: ${k}`);
             }
          }
@@ -196,7 +196,7 @@ first: for (let i = 0; i < 3; i++){
         for (let j = 0; j < 3; j++){
             console.log(`Second level: ${j}`);
             for (let k = 0; k < 5; k++){
-                if (k === 2) break first;
+                if (k === 2) break first; // Переходит к первому циклу и останавливает его
                 console.log(`Third level: ${k}`);
             }
          }
