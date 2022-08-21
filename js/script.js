@@ -134,7 +134,7 @@ console.log(2 + 2 * 2 !== 6);
 
 /*Lesson 22 Udemy */
 
-let num = 50;
+// let num = 50;
 
 // while (num < 55) {
 //     console.log(num);
@@ -147,12 +147,34 @@ let num = 50;
 // } 
 // while (num <= 55);
 
-for (let i = 1; i < 10; i++){
-    if (i%2 == 0){ // Если остаток от деления равен 0 (чётное число)
-        // break;
-        continue; // Пропускает чётные числа
+// for (let i = 1; i < 10; i++){
+//     if (i%2 == 0){ // Если остаток от деления равен 0 (чётное число)
+//         // break;
+//         continue; // Пропускает чётные числа
+//     }
+//     console.log(i);
+// }
+
+
+/* Lesson 23 */
+
+// for (let i = 0; i < 3; i++){
+//     console.log(i);
+//     for (let j = 0; j < 3; j++){
+//         console.log(j);
+//     }
+    
+// }
+
+
+let result = '';
+const lengthOfStars = 7;
+
+for (let i = 1; i < lengthOfStars; i++){
+    for (let j = 0; j < i; j++){
+        result += "*";
     }
-    console.log(i);
+    result += "\n";
 }
 
-
+console.log(result);
