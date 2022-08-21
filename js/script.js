@@ -179,7 +179,7 @@ console.log(2 + 2 * 2 !== 6);
 
 // console.log(result);
 
-first: for (let i = 0; i < 3; i++){
+first: for (let i = 0; i < 3; i++){   // first - метка. для возвращения к циклу из цикла
         console.log(`First level: ${i}`);
         for (let j = 0; j < 3; j++){
             console.log(`Second level: ${j}`);
