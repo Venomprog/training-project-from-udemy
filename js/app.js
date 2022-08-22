@@ -111,4 +111,14 @@ for (let i = 0; i < 2; i++){
     
 }
 
+if (personalMovieDB.count < 10){
+    alert('Просмотрено слишком мало фильмов :(');
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
+    alert('WOOOOOOOOOW');
+} else if (personalMovieDB.count >= 30){
+    alert('AMAAAAAAAAZING!!!!!');
+} else {
+    console.log('Произошла ошибка');
+}
+
 console.log(personalMovieDB);
