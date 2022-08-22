@@ -72,16 +72,43 @@ console.log(personalMovieDB);
 // }
 
 
-function fifthTask() {
-    const arrayOfNumbers = [];
-    let j = 5;
-    for (let i = 0; i <= 5; i++){
-        arrayOfNumbers[i] = j;
-        j++;
+// function fifthTask() {
+//     const arrayOfNumbers = [];
+//     let j = 5;
+//     for (let i = 0; i <= 5; i++){
+//         arrayOfNumbers[i] = j;
+//         j++;
+//     }
+//     console.log(arrayOfNumbers);
+//     // Не трогаем
+//     return arrayOfNumbers;
+// }
+
+// fifthTask();
+
+
+
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
+
+for (let i = 0; i < 2; i++){
+    let a = prompt('Один из последних фильмов?', '');
+    let b = prompt('Оцените этот фильм', '');
+    if (a != null && b != null && a != '' && b != '' && a.length < 50 && b.length < 50){
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('Error');
+        i--;
     }
-    console.log(arrayOfNumbers);
-    // Не трогаем
-    return arrayOfNumbers;
+    
 }
 
-fifthTask();
+console.log(personalMovieDB);
