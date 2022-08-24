@@ -222,13 +222,13 @@ showFirstMessage("Hello World");
 console.log(num);
 
 
-function calc (a, b){
-    return (a + b);
-}
+// function calc (a, b){
+//     return (a + b);
+// }
 
-console.log(calc(4, 5));
-console.log(calc(5, 6));
-console.log(calc(6, 7));
+// console.log(calc(4, 5));
+// console.log(calc(5, 6));
+// console.log(calc(6, 7));
 
 
 function ret(){
@@ -241,5 +241,9 @@ console.log(anotherNum);
 
 
 const logger = function (){
-    
+    console.log("Hello");
 };
+
+logger();
+
+const calc = (a, b) => a + b ;
