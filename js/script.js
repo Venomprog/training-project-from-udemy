@@ -238,3 +238,8 @@ function ret(){
 const anotherNum = ret();
 
 console.log(anotherNum);
+
+
+const logger = function (){
+    
+};
