@@ -210,3 +210,31 @@ console.log(2 + 2 * 2 !== 6);
 //   }
 
 // multiply(a,b);
+
+let num = 20;
+
+function showFirstMessage (text){
+    console.log(text);
+    num = 10;
+}
+
+showFirstMessage("Hello World");
+console.log(num);
+
+
+function calc (a, b){
+    return (a + b);
+}
+
+console.log(calc(4, 5));
+console.log(calc(5, 6));
+console.log(calc(6, 7));
+
+
+function ret(){
+    let num = 50;
+    return(num);
+}
+const anotherNum = ret();
+
+console.log(anotherNum);
