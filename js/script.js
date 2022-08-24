@@ -200,4 +200,13 @@ console.log(2 + 2 * 2 !== 6);
 //                 console.log(`Third level: ${k}`);
 //             }
 //          }
-//      }
+//      
+
+// let a = 5;
+// let b = 4;
+// function multiply(a, b){
+//    let score = a * b;
+//    console.log(score);
+//   }
+
+// multiply(a,b);
