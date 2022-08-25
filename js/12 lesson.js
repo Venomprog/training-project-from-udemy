@@ -111,3 +111,51 @@
 // }
 
 // console.log(result);
+
+
+// function sayHello(userName) {
+//     return `Привет, ${userName}`;
+// }
+
+// console.log(sayHello('alex'));
+
+
+// function returnNeighboringNumbers(num) {
+//     let newArr = [];
+//     newArr[0] = num -1;
+//     newArr[1] = num;
+//     newArr[2] = num +1;
+//     console.log(newArr);
+//     return newArr;
+// }
+
+// returnNeighboringNumbers(2);
+// returnNeighboringNumbers(5);
+// returnNeighboringNumbers(10);
+
+let result = '';
+let plusOne = '';
+function getMathResult(numOne, numTwo) {
+    for (let i = 1; i <= numTwo; i++){
+        
+       for (let j = 0; j < i; j++){
+        plusOne = numOne * i;
+        if (j !== numTwo - 1){
+            plusOne += '---';
+        }
+        
+       }
+       result += plusOne;
+    }
+    if (typeof(numTwo) !== 'number' || numTwo <= 0){
+        result = numOne;
+        console.log('Error type of numTwo');
+    }
+    return result;
+}
+
+console.log(getMathResult(5,3));
+console.log(getMathResult(3, 10));
+console.log(getMathResult(3, 'rere'));
+console.log(getMathResult(3, 0));
+
