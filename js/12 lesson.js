@@ -133,29 +133,53 @@
 // returnNeighboringNumbers(5);
 // returnNeighboringNumbers(10);
 
-let result = '';
-let plusOne = '';
-function getMathResult(numOne, numTwo) {
-    for (let i = 1; i <= numTwo; i++){
-        
-       for (let j = 0; j < i; j++){
-        plusOne = numOne * i;
-        if (j !== numTwo - 1){
-            plusOne += '---';
-        }
-        
-       }
-       result += plusOne;
-    }
-    if (typeof(numTwo) !== 'number' || numTwo <= 0){
-        result = numOne;
-        console.log('Error type of numTwo');
-    }
-    return result;
-}
 
-console.log(getMathResult(5,3));
-console.log(getMathResult(3, 10));
-console.log(getMathResult(3, 'rere'));
-console.log(getMathResult(3, 0));
+/* HARD PRACTICE WITH FUNCTIOINS AND CICLES */
+
+// let result = '';
+// let plusOne = '';
+// function getMathResult(numOne, numTwo) {
+//     for (let i = 1; i <= numTwo; i++){
+        
+//        for (let j = 0; j < i; j++){
+//         plusOne = numOne * i;
+//         if (j !== numTwo - 1){
+//             plusOne += '---';
+//         }
+        
+//        }
+//        result += plusOne;
+//     }
+//     if (typeof(numTwo) !== 'number' || numTwo <= 0){
+//         result = numOne;
+//         console.log('Error type of numTwo');
+//     }
+//     return result;
+// }
+
+// console.log(getMathResult(5,3));
+// console.log(getMathResult(3, 10));
+// console.log(getMathResult(3, 'rere'));
+// console.log(getMathResult(3, 0));
+
+
+/*END HARD PRACTICE WITH FUNCTIOINS AND CICLES */
+
+
+const str = "test";
+const arr = [1, 2, 3, 4, 5];
+console.log(arr.length);
+
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit"));
+
+const logg = "Hello world";
+console.log(logg.slice(0, 5));
+
+
+const num = 12.2;
+
+console.log(Math.round(num));  //Округление до ближайшего целого числа
 
