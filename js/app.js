@@ -125,12 +125,12 @@ function rememberMyFilms(){
 rememberMyFilms();
 
 function detectPersonalLevel(){
-    if (personalMovieDB.count < 10){
-        alert('Просмотрено слишком мало фильмов :(');
+    if (personalMovieDB.count < 10) {
+        console.log("Просмотрено мало фильмов");
     } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
-        alert('WOOOOOOOOOW');
+        console.log("Вы стандартный зритель");
     } else if (personalMovieDB.count >= 30){
-        alert('AMAAAAAAAAZING!!!!!');
+        console.log("Вы киноман");
     } else {
         console.log('Произошла ошибка');
     }
