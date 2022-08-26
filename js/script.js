@@ -249,32 +249,32 @@ console.log(2 + 2 * 2 !== 6);
 // const calc = (a, b) => a + b ;
 
 //  Converter Curse of Dollar
-const usdCurr = 29;
-const discount = 0.9;
-const res = convert(500, usdCurr);
+// const usdCurr = 29;
+// const discount = 0.9;
+// const res = convert(500, usdCurr);
 
-function convert (amount, curr){
-    console.log(amount * curr);
-    return amount * curr;
-}
-function promotion (result){
-    console.log(result * discount);
-}
+// function convert (amount, curr){
+//     console.log(amount * curr);
+//     return amount * curr;
+// }
+// function promotion (result){
+//     console.log(result * discount);
+// }
 
-promotion(res);
+// promotion(res);
 
 
-function test (){
-    for (let i = 0; i < 5; i++){
-        console.log(i);
-        if (i === 3) {return;}
-    }
-    console.log("Done");
-}
+// function test (){
+//     for (let i = 0; i < 5; i++){
+//         console.log(i);
+//         if (i === 3) {return;}
+//     }
+//     console.log("Done");
+// }
 
-test();
+// test();
 
 // Проверка, что функция всегда возвращает значение и без return (Возвращает undefined)
-function doNothing(){}
+// function doNothing(){}
 
-console.log(doNothing() === undefined);
+// console.log(doNothing() === undefined);

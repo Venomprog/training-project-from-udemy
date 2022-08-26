@@ -90,6 +90,14 @@ console.log(personalMovieDB);
 
 let numberOfFilms;
 
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
+
 function start (){
     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
     while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)){
@@ -98,13 +106,7 @@ function start (){
 }
 start();
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat: false
-};
+
 
 function rememberMyFilms(){
     for (let i = 0; i < 2; i++){
@@ -120,17 +122,27 @@ function rememberMyFilms(){
         
     }
 }
-
 rememberMyFilms();
 
-if (personalMovieDB.count < 10){
-    alert('Просмотрено слишком мало фильмов :(');
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
-    alert('WOOOOOOOOOW');
-} else if (personalMovieDB.count >= 30){
-    alert('AMAAAAAAAAZING!!!!!');
-} else {
-    console.log('Произошла ошибка');
+function detectPersonalLevel(){
+    if (personalMovieDB.count < 10){
+        alert('Просмотрено слишком мало фильмов :(');
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
+        alert('WOOOOOOOOOW');
+    } else if (personalMovieDB.count >= 30){
+        alert('AMAAAAAAAAZING!!!!!');
+    } else {
+        console.log('Произошла ошибка');
+    }
 }
+detectPersonalLevel();
 
 console.log(personalMovieDB);
+
+function showMyDB(){
+    if (personalMovieDB.privat === "false"){
+        console.log(personalMovieDB);
+        console.log('Privat done');
+    }
+}
+showMyDB();
