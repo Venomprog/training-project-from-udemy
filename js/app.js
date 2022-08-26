@@ -132,7 +132,7 @@ function detectPersonalLevel(){
     } else if (personalMovieDB.count >= 30){
         console.log("Вы киноман");
     } else {
-        console.log('Произошла ошибка');
+        console.log('Произошла ошибка'); //wtf why vivod?
     }
 }
 detectPersonalLevel();
