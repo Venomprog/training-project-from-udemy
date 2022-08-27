@@ -188,4 +188,4 @@ const text = '12.2';
 console.log(parseInt(text));
 console.log(parseFloat(text));
 
-
+const arrara = [];

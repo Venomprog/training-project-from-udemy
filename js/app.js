@@ -90,13 +90,7 @@ console.log(personalMovieDB);
 
 let numberOfFilms;
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat: false
-};
+
 
 function start (){
     numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
@@ -106,7 +100,13 @@ function start (){
 }
 start();
 
-
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
 
 function rememberMyFilms(){
     for (let i = 0; i < 2; i++){
@@ -127,7 +127,7 @@ rememberMyFilms();
 function detectPersonalLevel(){
     if (personalMovieDB.count < 10) {
         console.log("Просмотрено мало фильмов");
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
+    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30){
         console.log("Вы стандартный зритель");
     } else if (personalMovieDB.count >= 30){
         console.log("Вы киноман");
@@ -137,12 +137,15 @@ function detectPersonalLevel(){
 }
 detectPersonalLevel();
 
-console.log(personalMovieDB);
 
-function showMyDB(){
-    if (personalMovieDB.privat === "false"){
+
+function showMyDB(hidden){
+    if (!hidden){    // Проверка, если privat = false значит = не спрятан. hidden = true = 1; !hidden = false = 0
         console.log(personalMovieDB);
         console.log('Privat done');
     }
 }
-showMyDB();
+showMyDB(personalMovieDB.privat);
+
+
+//29 урок 10:23
