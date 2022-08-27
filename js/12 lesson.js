@@ -183,7 +183,7 @@ const num = 12.2;
 
 console.log(Math.round(num));  //Округление до ближайшего целого числа
 
-const arrara = [];
+const arrara = [1,2,3];
 const text = '12.2';
 console.log(parseInt(text));
 console.log(parseFloat(text));
