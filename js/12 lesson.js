@@ -177,9 +177,9 @@ console.log(fruit.indexOf("fruit"));
 
 const logg = "Hello world";
 console.log(logg.slice(0, 5));
+const num = 14.2;
 
 
-const num = 12.2;
 
 console.log(Math.round(num));  //Округление до ближайшего целого числа
 
