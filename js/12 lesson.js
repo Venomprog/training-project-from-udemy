@@ -188,4 +188,42 @@
 // console.log(parseInt(text));
 // console.log(parseFloat(text));
 
+// const cube = '';
+
+// function calculateVolumeAndArea(cube) {
+//     let volume = cube * cube * cube;
+//     let square = cube * cube * 6;
+    
+//     if (typeof(cube) === "string" || cube <= 0 || cube !== parseInt(cube)){
+//         console.log('Произошла ошибка');
+//     } else {
+//         let result = `Объём куба : ${volume}, площадь всей поверхности: ${square}`;
+//         return result;
+//     }
+    
+// }
+
+// console.log(calculateVolumeAndArea(25.2));
+
+
+const numOfSeat = '';
+function getCoupeNumber(numOfSeat) {
+    let coupeNum;
+    if (parseInt(numOfSeat/4) === parseFloat(numOfSeat/4)){
+         coupeNum = parseInt(numOfSeat/4);
+    } else {
+        coupeNum = parseInt(numOfSeat/4 + 1);
+    }
+    
+    if (numOfSeat < 0 || parseInt(numOfSeat) != parseFloat(numOfSeat) || typeof(numOfSeat) === "string"){
+        coupeNum = "Ошибка. Проверьте правильность введенного номера места";
+    } else if ( numOfSeat === 0 || numOfSeat > 36){
+        coupeNum = "Таких мест в вагоне не существует";
+    } else {
+        console.log(`Номер вашего купе ${coupeNum}`);
+    }
+    return coupeNum;
+}
+
+console.log(getCoupeNumber('Hello'));
 
