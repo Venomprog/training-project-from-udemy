@@ -148,4 +148,15 @@ function showMyDB(hidden){
 showMyDB(personalMovieDB.privat);
 
 
-//29 урок 10:23
+function writeYourGenres (){
+    for (let i = 1; i <= 3; i++){
+        const genre = prompt(`ваш любимый жанр под номером ${i}`);
+        personalMovieDB.genres[i - 1] = genre;  // Для нас массив с 0, а для пользователя номер 1
+        if (genre == '' || genre == null){
+            i--;
+        }
+    }
+    
+}
+
+writeYourGenres();
