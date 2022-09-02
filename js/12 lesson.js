@@ -228,3 +228,4 @@ function getCoupeNumber(numOfSeat) {
 console.log(getCoupeNumber('Hello'));
 //practice coupe
 let git;
+git = 35;
