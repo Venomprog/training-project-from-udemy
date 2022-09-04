@@ -230,25 +230,60 @@
 
 
 
-function getTimeFromMinutes(minutes) {
-    let hours = parseInt(minutes/60);
-    let tailhours = minutes - 60*hours;
-    let hoursWord = "часов";
-    if (hours == 2 || hours == 3 || hours == 4){
-        hoursWord = "часа";
-    } 
-    let result = `Это ${hours} ${hoursWord} ${tailhours} минут`;
-    if (typeof(minutes) != "number" || minutes < 0 || minutes != parseInt(minutes)){
-        result = "Ошибка, проверьте данные";
-        console.log(result);
-        return result;
-    } else {
-        console.log(result);
-    }
-}
-getTimeFromMinutes(135);
+// function getTimeFromMinutes(minutes) {
+//     if (typeof(minutes) != "number" || minutes < 0 || !Number.isInteger(minutes)){
+//         return  "Ошибка, проверьте данные";
+//     }
+//     const hours = parseInt(minutes/60);
+//     const tailHours = minutes - 60*hours;
+//     let hoursWord = "часов";
+//     if (hours == 2 || hours == 3 || hours == 4){
+//         hoursWord = "часа";
+//     } else if(hours == 1) {
+//         hoursWord = "час";
+//     }
+//     return `Это ${hours} ${hoursWord} и ${tailHours} минут`;
+// }
+// console.log(getTimeFromMinutes(50));
 
 
-function findMaxNumber(numOne, numTwo, numThree, numFour) {
+// function findMaxNumber(numOne, numTwo, numThree, numFour) {
+//     let result;
+//     if ( numOne > numTwo && numOne > numThree && numOne > numFour){
+//         result = numOne;
+//     } else if(numTwo > numOne && numTwo > numThree && numTwo > numFour){
+//         result = numTwo;
+//     } else if(numThree > numOne && numThree > numTwo && numThree > numFour){
+//         result = numThree;
+//     } else {
+//         result = numFour;
+//     }
+//     if (typeof(numOne) != 'number'||typeof(numTwo) != 'number'|| typeof(numThree) != 'number'|| typeof(numFour) != 'number'){
+//         result = 0;
+//     }
+   
+//     return result;
+// }
+// findMaxNumber(122,22,3.5);
 
-}
+/*   ЗАДАЧКА ФИБОНАЧИ, НЕ ДОРЕШАЛ, ВЕРНУСЬ С РЕКУРСИЕЙ */
+
+// let fibRes = "01";
+// function fib(num) {
+//     if (typeof(num) != "number" || num <=0 || !Number.isInteger(num)){
+//         return "";
+//     }
+//     let promejOne;
+//     let promejTwo;
+//     let promejThree;
+//     for (let i = 1; i < num - 1; i++){
+//         promejOne = parseInt(fibRes[i-1]);
+//         promejTwo = parseInt(fibRes[i]);
+//         promejThree = promejOne + promejTwo;
+//         fibRes += " ";
+//         fibRes += promejThree;
+//     }
+//     console.log(fibRes);
+// }
+// fib(7);
+
