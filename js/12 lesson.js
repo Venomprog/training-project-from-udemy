@@ -206,25 +206,40 @@
 // console.log(calculateVolumeAndArea(25.2));
 
 
-const numOfSeat = '';
-function getCoupeNumber(numOfSeat) {
-    let coupeNum;
-    if (parseInt(numOfSeat/4) === parseFloat(numOfSeat/4)){
-         coupeNum = parseInt(numOfSeat/4);
-    } else {
-        coupeNum = parseInt(numOfSeat/4 + 1);
-    }
+// const numOfSeat = '';
+// function getCoupeNumber(numOfSeat) {
+//     let coupeNum;
+//     if (parseInt(numOfSeat/4) === parseFloat(numOfSeat/4)){
+//          coupeNum = parseInt(numOfSeat/4);
+//     } else {
+//         coupeNum = parseInt(numOfSeat/4 + 1);
+//     }
     
-    if (numOfSeat < 0 || parseInt(numOfSeat) != parseFloat(numOfSeat) || typeof(numOfSeat) === "string"){
-        coupeNum = "Ошибка. Проверьте правильность введенного номера места";
-    } else if ( numOfSeat === 0 || numOfSeat > 36){
-        coupeNum = "Таких мест в вагоне не существует";
-    } else {
-        console.log(`Номер вашего купе ${coupeNum}`);
+//     if (numOfSeat < 0 || parseInt(numOfSeat) != parseFloat(numOfSeat) || typeof(numOfSeat) === "string"){
+//         coupeNum = "Ошибка. Проверьте правильность введенного номера места";
+//     } else if ( numOfSeat === 0 || numOfSeat > 36){
+//         coupeNum = "Таких мест в вагоне не существует";
+//     } else {
+//         console.log(`Номер вашего купе ${coupeNum}`);
+//     }
+//     return coupeNum;
+// }
+
+// console.log(getCoupeNumber('Hello'));
+//practice coupe
+
+
+
+function getTimeFromMinutes(minutes) {
+    let hours = parseInt(minutes/60);
+    let tailhours = minutes - 60*hours;
+    let hoursWord = "часов";
+    if (hours == 2 || hours == 3 || hours == 4){
+        hoursWord = "часа";
     }
-    return coupeNum;
+    let result = `Это ${hours} ${hoursWord} ${tailhours} минут`;
+    console.log(result);
+    return result;
 }
 
-console.log(getCoupeNumber('Hello'));
-//practice coupe
-let candy;
+getTimeFromMinutes(270);
