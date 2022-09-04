@@ -236,10 +236,19 @@ function getTimeFromMinutes(minutes) {
     let hoursWord = "часов";
     if (hours == 2 || hours == 3 || hours == 4){
         hoursWord = "часа";
-    }
+    } 
     let result = `Это ${hours} ${hoursWord} ${tailhours} минут`;
-    console.log(result);
-    return result;
+    if (typeof(minutes) != "number" || minutes < 0 || minutes != parseInt(minutes)){
+        result = "Ошибка, проверьте данные";
+        console.log(result);
+        return result;
+    } else {
+        console.log(result);
+    }
 }
+getTimeFromMinutes(135);
 
-getTimeFromMinutes(270);
+
+function findMaxNumber(numOne, numTwo, numThree, numFour) {
+
+}
