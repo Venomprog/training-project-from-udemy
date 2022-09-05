@@ -299,3 +299,17 @@ function done(){
 }
 
 learnJS('Javascript', done);  //Можно не добавлять скобки() к функции done т.к. мы её передаём
+
+const options = {
+    name: 'test',
+    width: 1024,
+    heigth: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    }
+};
+
+delete options.name;
+
+console.log(options.name);
