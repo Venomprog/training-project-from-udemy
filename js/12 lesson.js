@@ -287,3 +287,15 @@
 // }
 // fib(7);
 
+/* Call-back function practice */
+
+function learnJS (lang, callback){
+    console.log(`Я учу ${lang}`);
+    callback();   // Передаём сюда функцию done, поэтому ниже в аргументах не добавляем ей ()
+}
+
+function done(){
+    console.log("Я прошёл этот урок");
+}
+
+learnJS('Javascript', done);  //Можно не добавлять скобки() к функции done т.к. мы её передаём
