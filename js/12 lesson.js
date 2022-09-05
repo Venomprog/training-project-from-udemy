@@ -309,7 +309,7 @@ const options = {
         bg: 'red'
     }
 };
-
+console.log(Object.keys(options).length);
 // delete options.name;
 
 // console.log(options.name);
