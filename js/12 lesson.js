@@ -327,3 +327,11 @@ for (let key in options){
     
 }
 console.log(counter);
+
+//  end practice
+// start lesson
+
+const arr = [1,2,3,5,7];
+
+arr.push(10);
+console.log(arr);
