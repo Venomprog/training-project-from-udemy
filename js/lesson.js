@@ -352,4 +352,9 @@
 
 const str = prompt("", "");
 const products = str.split(", ");
-console.log(products);
+console.log(products.join(', '));
+
+
+const arr = [1, 13, 26, 8, 4];
+arr.sort();
+console.log(arr);
