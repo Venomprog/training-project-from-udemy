@@ -289,49 +289,67 @@
 
 /* Call-back function practice */
 
-function learnJS (lang, callback){
-    console.log(`Я учу ${lang}`);
-    callback();   // Передаём сюда функцию done, поэтому ниже в аргументах не добавляем ей ()
-}
+// function learnJS (lang, callback){
+//     console.log(`Я учу ${lang}`);
+//     callback();   // Передаём сюда функцию done, поэтому ниже в аргументах не добавляем ей ()
+// }
 
-function done(){
-    console.log("Я прошёл этот урок");
-}
+// function done(){
+//     console.log("Я прошёл этот урок");
+// }
 
-learnJS('Javascript', done);  //Можно не добавлять скобки() к функции done т.к. мы её передаём
+// learnJS('Javascript', done);  //Можно не добавлять скобки() к функции done т.к. мы её передаём
 
-const options = {
-    name: 'test',
-    width: 1024,
-    heigth: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    }
-};
-console.log(Object.keys(options).length);
-// delete options.name;
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     heigth: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     }
+// };
+// console.log(Object.keys(options).length);
+// // delete options.name;
 
-// console.log(options.name);
-let counter = 0;
-for (let key in options){
-    if (typeof(options[key]) === 'object'){
-        for (let i in options[key]){
-            console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
-            counter++;
-        }
-    } else {
-        console.log(`Свойство ${key} имеет значение ${options[key]}`);
-        counter++;
-    }
+// // console.log(options.name);
+// let counter = 0;
+// for (let key in options){
+//     if (typeof(options[key]) === 'object'){
+//         for (let i in options[key]){
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//             counter++;
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//         counter++;
+//     }
     
-}
-console.log(counter);
+// }
+// console.log(counter);
 
-//  end practice
-// start lesson
+// //  end practice
+// // start lesson
 
-const arr = [1,2,3,5,7];
+// const arr = [1,2,3,5,7];
 
-arr.push(10);
-console.log(arr);
+// arr.push(10);
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr){
+//     console.log(value);
+// }
+
+// arr.forEach(function(item, i, arr){
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+
+
+
+const str = prompt("", "");
+const products = str.split(", ");
+console.log(products);
