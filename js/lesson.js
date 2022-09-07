@@ -350,11 +350,9 @@
 
 
 
-const str = prompt("", "");
-const products = str.split(", ");
-console.log(products.join(', '));
+const str = prompt("", "");      //Принимаем строчки через запятую
+const products = str.split(", "); //делим строку на отдельные эл-ты массива
+products.sort();                    //Сортируем по алфавиту
+console.log(products.join(', ')); //скрепляем массив в строку черезе дополнение в условие
 
 
-const arr = [1, 13, 26, 8, 4];
-arr.sort();
-console.log(arr);
