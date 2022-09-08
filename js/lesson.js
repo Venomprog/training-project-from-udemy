@@ -415,3 +415,36 @@ const newArray = oldArray.slice();  //клонирование массива, �
 newArray[1] = 'avgb';
 console.log(oldArray);
 console.log(newArray);
+
+
+
+const video = ['youtube', 'vimeo'],
+      blogs = ['wp', 'blogger'],
+      internet = [...video, ...blogs, 'vk'];
+
+console.log(internet);
+
+
+
+function log (a,b,c){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+const gum = [2, 5, 7];
+
+log(...gum);  //оператор spread подставил массив в передаваемые аргументы функции
+
+
+const arrray = ['a', 'dd'];
+const newArrrray = [...arrray];
+console.log(newArrrray); //spread оператор для 4й способа поверхностного копирования  массива
+
+
+const q = {
+    one: 1,
+    two: 2
+};
+
+const newObjj = {...q};   //spread оператор для 4й способа поверхностного копирования объекта
+console.log(newObjj);    
