@@ -258,7 +258,8 @@
 //     } else {
 //         result = numFour;
 //     }
-//     if (typeof(numOne) != 'number'||typeof(numTwo) != 'number'|| typeof(numThree) != 'number'|| typeof(numFour) != 'number'){
+//     if (typeof(numOne) != 'number'||typeof(numTwo) != 'number'|| typeof(numThree)
+//Убрать отсюда и поместить на строку выше != 'number'|| typeof(numFour) != 'number'){
 //         result = 0;
 //     }
    
@@ -356,3 +357,44 @@ products.sort();                    //Сортируем по алфавиту
 console.log(products.join(', ')); //скрепляем массив в строку черезе дополнение в условие
 
 // new lesson and practice
+
+
+// let a = 5,
+//     b = a;
+// b = b + 5;          //Работает только с примитивами, т.к. передаётся значение
+// console.log(b);
+
+// const obj = {
+//     a: 5,
+//     b: 1
+// };
+
+// const copy = obj;   //Передаётся ссылка на объект, а не создаётся новый
+
+// copy.a = 10;    // Не работает с объекатми массивами и функциями, т.к. передаётся ссылка
+// console.log(copy);
+// console.log(obj);
+
+
+function copy(mainObj){
+    let copyObj = {};
+    let key;
+    for (key in mainObj) {
+        copyObj[key] = mainObj[key];
+    }
+    return copyObj;
+}
+
+const numbers = {
+    a: 5,
+    b: 1,
+    c: {
+        x:7,
+        y:4
+    }
+};
+
+const newNumbers = copy(numbers);
+newNumbers.a = 10;
+console.log(newNumbers);
+console.log(numbers);
