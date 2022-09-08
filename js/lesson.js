@@ -394,7 +394,24 @@ const numbers = {
     }
 };
 
-const newNumbers = copy(numbers);
-newNumbers.a = 10;
-console.log(newNumbers);
-console.log(numbers);
+// const newNumbers = copy(numbers);
+// newNumbers.a = 10;
+// console.log(newNumbers);
+// console.log(numbers);
+
+
+const add = {
+    d: 15,
+    e: 20
+};
+const clone = Object.assign({}, add);
+clone.d = 20;
+console.log(add);
+console.log(clone); // Соединение объекта в новый объект, который можно изменять
+
+
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice();  //клонирование массива, который можно изменять
+newArray[1] = 'avgb';
+console.log(oldArray);
+console.log(newArray);
