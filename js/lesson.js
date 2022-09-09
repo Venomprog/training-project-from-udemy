@@ -447,4 +447,4 @@ const q = {
 };
 
 const newObjj = {...q};   //spread оператор для 4й способа поверхностного копирования объекта
-console.log(newObjj);    
+console.log(newObjj);    // testing
