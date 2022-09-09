@@ -420,7 +420,7 @@ console.log(newArray);
 
 const video = ['youtube', 'vimeo'],
       blogs = ['wp', 'blogger'],
-      internet = [...video, ...blogs, 'vk'];
+      internet = [...video, ...blogs, 'vk'];  //spread оператор для создание из нескольких объектов
 
 console.log(internet);
 
