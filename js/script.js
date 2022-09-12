@@ -280,3 +280,5 @@ console.log(2 + 2 * 2 !== 6);
 // console.log(doNothing() === undefined);
 
 // launch with notebook
+
+// не понятно почему с ноутбука не работает гит
