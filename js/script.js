@@ -278,3 +278,5 @@ console.log(2 + 2 * 2 !== 6);
 // function doNothing(){}
 
 // console.log(doNothing() === undefined);
+
+// launch with notebook
