@@ -278,3 +278,9 @@ console.log(2 + 2 * 2 !== 6);
 // function doNothing(){}
 
 // console.log(doNothing() === undefined);
+
+// launch with notebook
+
+// не понятно почему с ноутбука не работает гит
+
+// возможно нужно загрузить через терминал именно сюда на ноут с гитхаба
