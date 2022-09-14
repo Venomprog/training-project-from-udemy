@@ -465,10 +465,22 @@ const personalPlanPeter = {
         exp: '1 month'
     }
 };
-let userExp;
-function showExperience(plan) {
-    userExp = plan.skills;
-    return userExp.exp;
+// let userExp;
+// function showExperience(plan) {
+//     userExp = plan.skills;
+//     return userExp.exp;
+// }
+let userSkills;
+function showProgrammingLangs(plan) {
+    userSkills = plan.skills;
+    let userPgLangs = userSkills.programmingLangs;
+    let userRes = '';
+    for (let key in userPgLangs){
+        userRes += `Язык ${key} изучен на ${userPgLangs[key]} \n`;
+       
+    }
+    return userRes;
 }
+console.log(showProgrammingLangs(personalPlanPeter));
 
 console.log(showExperience(personalPlanPeter));
