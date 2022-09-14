@@ -465,11 +465,11 @@ const personalPlanPeter = {
         exp: '1 month'
     }
 };
-// let userExp;
-// function showExperience(plan) {
-//     userExp = plan.skills;
-//     return userExp.exp;
-// }
+let userExp;
+function showExperience(plan) {
+    userExp = plan.skills;
+    return userExp.exp;
+}
 let userSkills;
 function showProgrammingLangs(plan) {
     userSkills = plan.skills;
@@ -483,4 +483,3 @@ function showProgrammingLangs(plan) {
 }
 console.log(showProgrammingLangs(personalPlanPeter));
 
-console.log(showExperience(personalPlanPeter));
