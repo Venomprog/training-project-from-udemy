@@ -448,3 +448,27 @@ const q = {
 
 const newObjj = {...q};   //spread оператор для 4й способа поверхностного копирования объекта
 console.log(newObjj);    // testing
+
+
+
+//practice #10
+
+const personalPlanPeter = {
+    name: "Peter",
+    age: "29",
+    skills: {
+        languages: ['ru', 'eng'],
+        programmingLangs: {
+            js: '20%',
+            php: '10%'
+        },
+        exp: '1 month'
+    }
+};
+let userExp;
+function showExperience(plan) {
+    userExp = plan.skills;
+    return userExp.exp;
+}
+
+console.log(showExperience(personalPlanPeter));
