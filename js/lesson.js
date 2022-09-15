@@ -482,4 +482,4 @@ function showProgrammingLangs(plan) {
     return userRes;
 }
 console.log(showProgrammingLangs(personalPlanPeter));
-
+//Функция принимает объект и для каждого из ЯП пишет строку с его свойством
