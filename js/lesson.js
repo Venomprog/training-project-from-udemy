@@ -463,6 +463,10 @@ const personalPlanPeter = {
             php: '10%'
         },
         exp: '1 month'
+    },
+    showAgeAndLangs: function (plans){
+        let softSkills = plans.skills;    //Передача значений новому объекту (исправить, не работает)
+        return `Мне ${age} и я владею языками:`;
     }
 };
 let userExp;
