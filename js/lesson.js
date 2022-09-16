@@ -463,6 +463,10 @@ const personalPlanPeter = {
             php: '10%'
         },
         exp: '1 month'
+    },
+    showAgeAndLangs: function (plans){
+        let softSkills = plans.skills;    //Передача значений новому объекту (исправить, не работает)
+        return `Мне ${age} и я владею языками:`;
     }
 };
 let userExp;
@@ -482,4 +486,8 @@ function showProgrammingLangs(plan) {
     return userRes;
 }
 console.log(showProgrammingLangs(personalPlanPeter));
+<<<<<<< HEAD
 // Обязательно решить задачку 3
+=======
+//Функция принимает объект и для каждого из ЯП пишет строку с его свойством
+>>>>>>> afe983529c516f30ff106fe2a0d816758ff52083
