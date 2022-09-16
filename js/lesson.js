@@ -460,15 +460,27 @@ const personalPlanPeter = {
         languages: ['ru', 'eng'],
         programmingLangs: {
             js: '20%',
-            php: '10%'
+            php: '10%'            
         },
         exp: '1 month'
     },
     showAgeAndLangs: function (plans){
-        let softSkills = plans.skills;    //Передача значений новому объекту (исправить, не работает)
-        return `Мне ${age} и я владею языками:`;
+        let userAge = plans.age;
+        let softSkills = '';
+        let langSkills = '';
+        softSkills = plans.skills;    
+        langSkills = softSkills.languages;
+        let key;
+        let langRes = '';
+        for (key in langSkills){
+            langRes += langSkills[key].toUpperCase();
+            langRes += ' ';
+        }
+        // upLangs = langSkills.toUpperCase;
+        return `Мне ${userAge} и я владею языками: ${langRes}`;
     }
 };
+console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
 let userExp;
 function showExperience(plan) {
     userExp = plan.skills;
@@ -476,18 +488,13 @@ function showExperience(plan) {
 }
 let userSkills;
 function showProgrammingLangs(plan) {
-    userSkills = plan.skills;
-    let userPgLangs = userSkills.programmingLangs;
-    let userRes = '';
-    for (let key in userPgLangs){
-        userRes += `Язык ${key} изучен на ${userPgLangs[key]} \n`;
-       
+    let str = '';
+    const {programmingLangs} = plan.skills;
+    for (let key in programmingLangs){
+        str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
     }
-    return userRes;
+    return str;
 }
 console.log(showProgrammingLangs(personalPlanPeter));
-<<<<<<< HEAD
+console.log(showExperience(personalPlanPeter));
 // Обязательно решить задачку 3
-=======
-//Функция принимает объект и для каждого из ЯП пишет строку с его свойством
->>>>>>> afe983529c516f30ff106fe2a0d816758ff52083
