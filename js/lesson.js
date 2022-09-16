@@ -482,4 +482,4 @@ function showProgrammingLangs(plan) {
     return userRes;
 }
 console.log(showProgrammingLangs(personalPlanPeter));
-
+// Обязательно решить задачку 3
