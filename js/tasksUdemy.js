@@ -3,7 +3,7 @@ const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 function showFamily(arr) {
     let familyLength = '';
     let key;
-    if (arr.length !== 0){      // не идёт проверка на пустоту массива, нужно исправить
+    if (arr.length !== 0){      
         for (key of arr){
             familyLength += [key] + ' ';
         }         
@@ -28,3 +28,5 @@ function standardizeStrings(arr) {
 }
 
 standardizeStrings(favoriteCities);
+
+//Практика выполнена на отлично!
