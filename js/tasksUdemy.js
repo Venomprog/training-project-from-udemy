@@ -1,9 +1,9 @@
-const family = [];
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
 
 function showFamily(arr) {
     let familyLength = '';
     let key;
-    if (arr !== ''){      // не идёт проверка на пустоту массива, нужно исправить
+    if (arr.length !== 0){      // не идёт проверка на пустоту массива, нужно исправить
         for (key of arr){
             familyLength += [key] + ' ';
         }         
