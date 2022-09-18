@@ -45,3 +45,4 @@ function reverse(str) {
     return `${b}`;
 }
 console.log(reverse(someString));
+// Достиг результата, что функция реверсит фразу и реверсит в каждом слове буквы, но код не чистый
