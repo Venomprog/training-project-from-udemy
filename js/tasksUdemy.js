@@ -30,3 +30,9 @@ function standardizeStrings(arr) {
 standardizeStrings(favoriteCities);
 
 //Практика выполнена на отлично!
+
+const someString = 'This is some strange string';
+
+function reverse(str) {
+    
+}
