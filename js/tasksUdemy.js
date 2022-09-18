@@ -32,7 +32,16 @@ standardizeStrings(favoriteCities);
 //Практика выполнена на отлично!
 
 const someString = 'This is some strange string';
-
 function reverse(str) {
-    
+    let strSplit = str.split(' ');
+    const reversed = strSplit.reverse();
+    let value;
+    let a;
+    let b = '';
+    for (value of reversed){
+        a = value.split('').reverse().join('');
+        b += a + ' ';
+    }
+    return `${b}`;
 }
+console.log(reverse(someString));
