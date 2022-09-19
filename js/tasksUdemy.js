@@ -38,11 +38,37 @@ function reverse(str) {
     let value;
     let a;
     let b = '';
-    for (value of reversed){
-        a = value.split('').reverse().join('');
-        b += a + ' ';
+    if (typeof(str) !== "string"){
+        return `Ошибка!`;
+    } else {
+        for (value of reversed){
+            a = value.split('').reverse().join('');
+            b += a + ' ';
+        }
+        return `${b}`;
     }
-    return `${b}`;
+    
 }
 console.log(reverse(someString));
 // Достиг результата, что функция реверсит фразу и реверсит в каждом слове буквы, но код не чистый
+
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+    let str = '';
+    if (arr.length === 0){
+        str = `Пусто`;
+    } else {
+        str = `Доступны валюты:\n`;
+    }
+    arr.forEach(function(curr,i){
+        if (curr != missingCurr){
+            str += `${curr}\n`;
+        }
+    });
+    return str;
+}
+console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY'));
+
+// Добивался правильного решения функции
