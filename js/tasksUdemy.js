@@ -62,13 +62,14 @@ function availableCurr(arr, missingCurr) {
     } else {
         str = `Доступны валюты:\n`;
     }
-    arr.forEach(function(curr,i){
+    arr.forEach(function(curr,i){  //Проверка значений массива на отсутствующую валюту
         if (curr != missingCurr){
-            str += `${curr}\n`;
+            str += `${curr}\n`;   //Если валюта не попала под список значений, значит она доступна
         }
     });
     return str;
 }
-console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY'));
+console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY')); 
+//массив, отсутствующая валюта
 
 // Добивался правильного решения функции
