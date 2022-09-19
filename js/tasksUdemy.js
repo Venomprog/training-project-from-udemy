@@ -57,7 +57,7 @@ const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
 function availableCurr(arr, missingCurr) {
     let str = '';
-    if (arr.length === 0){
+    if (arr.length === 0){   //Проверка на пустой массив
         str = `Пусто`;
     } else {
         str = `Доступны валюты:\n`;
