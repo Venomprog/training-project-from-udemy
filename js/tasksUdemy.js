@@ -42,7 +42,7 @@ function reverse(str) {
         return `Ошибка!`;
     } else {
         for (value of reversed){
-            a = value.split('').reverse().join('');
+            a = value.split('').reverse().join(''); // добавляет лишний пробел в конце
             b += a + ' ';
         }
         return `${b}`;
