@@ -39,7 +39,7 @@ function reverse(str) {
     return str.split('').reverse().join('');
 }
 console.log(reverse(someString));
-
+// debug done!
 
 const baseCurrencies = ['USD', 'EUR'];
 const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
