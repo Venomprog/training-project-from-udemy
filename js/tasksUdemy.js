@@ -41,6 +41,7 @@ function reverse(str) {
 console.log(reverse(someString));
 // debug done!
 
+
 const baseCurrencies = ['USD', 'EUR'];
 const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
@@ -62,3 +63,5 @@ console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY'));
 //массив, отсутствующая валюта
 
 // Добивался правильного решения функции
+
+// End Task Practice
