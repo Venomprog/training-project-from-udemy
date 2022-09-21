@@ -33,24 +33,13 @@ standardizeStrings(favoriteCities);
 
 const someString = 'This is some strange string';
 function reverse(str) {
-    let strSplit = str.split(' ');
-    const reversed = strSplit.reverse();
-    let value;
-    let a;
-    let b = '';
     if (typeof(str) !== "string"){
         return `Ошибка!`;
-    } else {
-        for (value of reversed){
-            a = value.split('').reverse().join(''); // добавляет лишний пробел в конце
-            b += a + ' ';  // нужно исправить баг с пробелом (Пробовал методы, не вышло, возможно через if)
-        }
-        return `${b}`;
-    }
-    
+    } 
+    return str.split('').reverse().join('');
 }
 console.log(reverse(someString));
-// Достиг результата, что функция реверсит фразу и реверсит в каждом слове буквы, но код не чистый
+
 
 const baseCurrencies = ['USD', 'EUR'];
 const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
