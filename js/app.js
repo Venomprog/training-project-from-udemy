@@ -17,14 +17,14 @@ const personalMovieDB = {
 };
 
 function rememberMyFilms(){
-    for (let i = 0; i < 2; i++){
-        let a = prompt('Один из последних фильмов?', '').trim();
+    for (let i = 0; i < 2; i++){   //2 раза спрашивает фильм и записывает в наш объект юзера
+        let a = prompt('Один из последних фильмов?', '').trim(); //очищает от лишних пробелов
         let b = prompt('Оцените этот фильм', '').trim();
         if (a != null && b != null && a != '' && b != '' && a.length < 50 && b.length < 50){
             personalMovieDB.movies[a] = b;
             console.log('done');
         } else {
-            console.log('Error');
+            console.log('Error'); //проверка на ошибки, если пусто, то вопрос снова задаётся
             i--;
         }
         
