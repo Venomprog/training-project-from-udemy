@@ -24,7 +24,7 @@ function rememberMyFilms(){
             personalMovieDB.movies[a] = b;
             console.log('done');
         } else {
-            console.log('Error'); //проверка на ошибки, если пусто, то вопрос снова задаётся
+            console.log('Error'); //проверка на ошибки, если пусто, то вопрос снова задаётс
             i--;
         }
         
