@@ -24,7 +24,7 @@ function rememberMyFilms(){
             personalMovieDB.movies[a] = b;
             console.log('done');
         } else {
-            console.log('Error'); //проверка на ошибки, если пусто, то вопрос снова задаётс
+            console.log('Error'); //проверка на ошибки, если пусто, то вопрос снова задаётся
             i--;
         }
         
@@ -70,3 +70,4 @@ function writeYourGenres (){
 writeYourGenres();
 
 
+//Обязательно пройти след. практику и уроки завтра
