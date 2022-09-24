@@ -62,6 +62,6 @@ function availableCurr(arr, missingCurr) {
 console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY')); 
 //массив, отсутствующая валюта
 
-// Добивался правильного решения функbb
+// Добивался правильного решения функii
 
 // End Task Practice
