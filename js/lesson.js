@@ -1,3 +1,4 @@
+"use strict";
 // const arrObj = {
 //     a: 1,
 //     1: 2
