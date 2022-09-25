@@ -498,3 +498,15 @@ function showProgrammingLangs(plan) {
 console.log(showProgrammingLangs(personalPlanPeter));
 console.log(showExperience(personalPlanPeter));
 // Обязательно решить задачку 3
+//lesson 36
+const soldier = {
+    health: 400,
+    armour: 100,
+    sayHello: function(){
+        console.log("Hello");
+    }
+};
+
+const john = Object.create(soldier); //Создаём объект и присваиваем ему прототип объекта выше
+
+john.sayHello(); //Все методы от прототипа будут работать для нового объекта
