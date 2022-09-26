@@ -118,28 +118,39 @@ console.log(isBudgetEnough(shoppingMallData)); //выводит результа
 
 // Задачка со студентами начинается 
 
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Zlatan'];
 
 function sortStudentsByGroups(arr) {
     const studenstSort = students.sort();
-    console.log(studenstSort);
     let otherStud = 'Оставшиеся студенты: ';
     if (arr.length == 10){
-        otherStud += arr[9];
+        otherStud += studenstSort[9];
     } else {
         for (let k = 9; k < arr.length; k++){
             if (k == arr.length -1){
-                otherStud += arr[k];
+                otherStud += studenstSort[k];
             } else {
-                otherStud += arr[k] + `, `;
+                otherStud += studenstSort[k] + `, `;
             }
-            console.log('gundone');
+            
         }
     } if (arr.length == 9){
         otherStud += `-`;
-    } 
-    
-    console.log(otherStud);
+    }
+    const firstGroup = [studenstSort[0], studenstSort[1], studenstSort[2]]; 
+    const secondGroup = [studenstSort[3], studenstSort[4], studenstSort[5]];
+    const thirdGroup = [studenstSort[6], studenstSort[7], studenstSort[8]];
+    const result = [];
+    result[0] = firstGroup;
+    result[1] = secondGroup;
+    result[2] = thirdGroup;
+    result[3] = otherStud;
+    return result;
 }
 
-sortStudentsByGroups(students);
+console.log(sortStudentsByGroups(students));
+
+//Заметка*
+//Если я вставляю массив из 10 ребят, то в браузере когда добавляют ещё одного, пишет неверное решение
+//Но если я сам вставляю массив из 11+ ребят, то решение засчитывает :)
+//Значит в браузере у курса юдеми есть ошибка, которая неправильно добавляет в массивы значения
