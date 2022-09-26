@@ -66,3 +66,51 @@ console.log(availableCurr([...baseCurrencies,...additionalCurrencies], 'CNY'));
 // Добивался правильного решения функii
 
 // End Task Practice
+
+
+
+//start practice with shops
+
+const shoppingMallData = {
+    shops: [
+        {
+            width: 10,
+            length: 5
+        },
+        {
+            width: 15,
+            length: 7
+        },
+        {
+            width: 20,
+            length: 5
+        },
+        {
+            width: 8,
+            length: 10
+        }
+    ],
+    height: 5,
+    moneyPer1m3: 30,
+    budget: 50000
+};
+
+function isBudgetEnough(data) {
+    let mallSquare = 0;
+    let shopSquare = 0;
+    data.shops.forEach((item, i) => {  // Для каждого магазина вычисляет площадь и записывает общую площадь центра
+        shopSquare = item.width * item.length;
+        mallSquare += shopSquare;
+        console.log(mallSquare);
+    });
+    const mallHeight = data.height * mallSquare;
+    const mallPrice = mallHeight * data.moneyPer1m3; //вычисление стоимости аренды центра
+    console.log(mallHeight);
+    console.log(mallPrice);
+    if (data.budget < mallPrice){  //Проверка, хватает ли бюджета
+        return `Бюджета недостаточно`;
+    } else {
+        return `Бюджета достаточно`;
+    }
+}
+console.log(isBudgetEnough(shoppingMallData));
