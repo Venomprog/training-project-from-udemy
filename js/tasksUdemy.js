@@ -113,4 +113,4 @@ function isBudgetEnough(data) {
         return `Бюджета достаточно`;
     }
 }
-console.log(isBudgetEnough(shoppingMallData));
+console.log(isBudgetEnough(shoppingMallData)); //выводит результат функции для проверки return
