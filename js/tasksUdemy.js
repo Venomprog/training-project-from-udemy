@@ -114,3 +114,32 @@ function isBudgetEnough(data) {
     }
 }
 console.log(isBudgetEnough(shoppingMallData)); //выводит результат функции для проверки return
+
+
+// Задачка со студентами начинается 
+
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+    const studenstSort = students.sort();
+    console.log(studenstSort);
+    let otherStud = 'Оставшиеся студенты: ';
+    if (arr.length == 10){
+        otherStud += arr[9];
+    } else {
+        for (let k = 9; k < arr.length; k++){
+            if (k == arr.length -1){
+                otherStud += arr[k];
+            } else {
+                otherStud += arr[k] + `, `;
+            }
+            console.log('gundone');
+        }
+    } if (arr.length == 9){
+        otherStud += `-`;
+    } 
+    
+    console.log(otherStud);
+}
+
+sortStudentsByGroups(students);
