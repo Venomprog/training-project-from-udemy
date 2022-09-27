@@ -511,3 +511,11 @@ const soldier = {
 const john = Object.create(soldier); //Создаём объект и присваиваем ему прототип объекта выше
 
 john.sayHello(); //Все методы от прототипа будут работать для нового объекта
+
+
+//new lesson
+//Типизация
+// input, textarea, prompt всё что приходит от пользователи - Строки
+
+//boolean
+//0, '', null, undefined, Nan  - это всё булиновое false
