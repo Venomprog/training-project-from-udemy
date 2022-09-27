@@ -522,3 +522,15 @@ john.sayHello(); //Все методы от прототипа будут раб
 
 
 // ' ', " "  - не булиновое false, а строки  т.к. в них пробел
+
+//Логические преобразования
+
+let switcher = null;
+if (switcher){
+    console.log('Hello');  //не выведет, т.к. false  если 0(false) то не выполняется условие
+}
+
+switcher = 1;
+if (switcher){
+    console.log('Hello');  // в данном же случае условие выполнится т.к. switcher = 1 = true
+}
