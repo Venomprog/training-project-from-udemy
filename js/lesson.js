@@ -538,9 +538,9 @@ if (switcher){
 
 //Замыкание и лексическое окружение
 
-for (let i = 0; i < 9; i++){
+for (let i = 0; i < 9; i++){ debugger
     let num = 0;
-    for (let j = 0; j < 10; j++){
+    for (let j = 0; j < 10; j++){ debugger //поверить дебагер в хроме
         num += 3;
     }
     console.log(num);
