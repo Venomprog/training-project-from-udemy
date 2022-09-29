@@ -546,3 +546,5 @@ for (let i = 0; i < 9; i++){ debugger
     console.log(num);
 }
 
+// проверка знаний
+console.log(2 && 1 && null && 0 && undefined); // "И" запинается на лжи, то бишь на null поэтом он и выводится
