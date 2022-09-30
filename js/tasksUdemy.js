@@ -204,7 +204,7 @@ function isAverageLunchPriceTrue(fDish, sDish, average) {
 console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
 
 function transferWaitors(data) {
-    const copy = Object.assign({}, data);
+    const copy = Object.assign({}, data); //Именно вот так можно скопировать объект, без ссылок
     
     copy.waitors = [{name: 'Mike', age: 32}];
     return copy;
@@ -212,3 +212,5 @@ function transferWaitors(data) {
 
 console.log(transferWaitors(restorantData));
 console.log(restorantData);
+
+//practice done
