@@ -213,4 +213,4 @@ function transferWaitors(data) {
 console.log(transferWaitors(restorantData));
 console.log(restorantData);
 
-//practice done
+//practice done 3/3
