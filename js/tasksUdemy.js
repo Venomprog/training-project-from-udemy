@@ -214,3 +214,4 @@ console.log(transferWaitors(restorantData));
 console.log(restorantData);
 
 //practice done 3/3
+//teoretic practice
