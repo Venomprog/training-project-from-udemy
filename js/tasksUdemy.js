@@ -214,4 +214,4 @@ console.log(transferWaitors(restorantData));
 console.log(restorantData);
 
 //practice done 3/3
-//teoretic practice on udemy, complete video ggg
+//teoretic practice on udemy, complete
