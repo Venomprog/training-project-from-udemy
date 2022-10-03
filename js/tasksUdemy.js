@@ -215,3 +215,4 @@ console.log(restorantData);
 
 //practice done 3/3
 //teoretic practice on udemy, complete
+//reset styles becouse some trouble...
