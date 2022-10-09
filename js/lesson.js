@@ -567,9 +567,11 @@
 
 // console.log(document.body.childNodes); //Выводит все узлы и ноды у Боди
 
-for (let node of document.body.childNodes){
-    if (node.nodeName == '#text'){
+for (let node of document.body.childNodes){ //Цикл для каждой ноды в Бади
+    if (node.nodeName == '#text'){ // Если узел текстовы перенос, то переход к след эл-ту
         continue;
     }
     console.log(node);
 }
+
+console.log(document.body.lastElementChild);
