@@ -574,4 +574,4 @@ for (let node of document.body.childNodes){ //Цикл для каждой но�
     console.log(node);
 }
 
-console.log(document.body.lastElementChild);
+console.log(document.body.lastElementChild); //Выводит последнего ребёнка Бади
