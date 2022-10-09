@@ -352,212 +352,217 @@
 
 
 
-const str = prompt("", "");      //Принимаем строчки через запятую
-const products = str.split(", "); //делим строку на отдельные эл-ты массива
-products.sort();                    //Сортируем по алфавиту
-console.log(products.join(', ')); //скрепляем массив в строку черезе дополнение в условие
+// const str = prompt("", "");      //Принимаем строчки через запятую
+// const products = str.split(", "); //делим строку на отдельные эл-ты массива
+// products.sort();                    //Сортируем по алфавиту
+// console.log(products.join(', ')); //скрепляем массив в строку черезе дополнение в условие
 
-// new lesson and practice
+// // new lesson and practice
 
 
-// let a = 5,
-//     b = a;
-// b = b + 5;          //Работает только с примитивами, т.к. передаётся значение
-// console.log(b);
+// // let a = 5,
+// //     b = a;
+// // b = b + 5;          //Работает только с примитивами, т.к. передаётся значение
+// // console.log(b);
 
-// const obj = {
+// // const obj = {
+// //     a: 5,
+// //     b: 1
+// // };
+
+// // const copy = obj;   //Передаётся ссылка на объект, а не создаётся новый
+
+// // copy.a = 10;    // Не работает с объекатми массивами и функциями, т.к. передаётся ссылка
+// // console.log(copy);
+// // console.log(obj);
+
+
+// function copy(mainObj){
+//     let copyObj = {};
+//     let key;
+//     for (key in mainObj) {
+//         copyObj[key] = mainObj[key];
+//     }
+//     return copyObj;
+// }
+
+// const numbers = {
 //     a: 5,
-//     b: 1
+//     b: 1,
+//     c: {
+//         x:7,
+//         y:4
+//     }
 // };
 
-// const copy = obj;   //Передаётся ссылка на объект, а не создаётся новый
-
-// copy.a = 10;    // Не работает с объекатми массивами и функциями, т.к. передаётся ссылка
-// console.log(copy);
-// console.log(obj);
-
-
-function copy(mainObj){
-    let copyObj = {};
-    let key;
-    for (key in mainObj) {
-        copyObj[key] = mainObj[key];
-    }
-    return copyObj;
-}
-
-const numbers = {
-    a: 5,
-    b: 1,
-    c: {
-        x:7,
-        y:4
-    }
-};
-
-// const newNumbers = copy(numbers);
-// newNumbers.a = 10;
-// console.log(newNumbers);
-// console.log(numbers);
+// // const newNumbers = copy(numbers);
+// // newNumbers.a = 10;
+// // console.log(newNumbers);
+// // console.log(numbers);
 
 
-const add = {
-    d: 15,
-    e: 20
-};
-const clone = Object.assign({}, add);
-clone.d = 20;
-console.log(add);
-console.log(clone); // Соединение объекта в новый объект, который можно изменять
+// const add = {
+//     d: 15,
+//     e: 20
+// };
+// const clone = Object.assign({}, add);
+// clone.d = 20;
+// console.log(add);
+// console.log(clone); // Соединение объекта в новый объект, который можно изменять
 
 
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice();  //клонирование массива, который можно изменять
-newArray[1] = 'avgb';
-console.log(oldArray);
-console.log(newArray);
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();  //клонирование массива, который можно изменять
+// newArray[1] = 'avgb';
+// console.log(oldArray);
+// console.log(newArray);
 
 
 
-const video = ['youtube', 'vimeo'],
-      blogs = ['wp', 'blogger'],
-      internet = [...video, ...blogs, 'vk'];  //spread оператор для создание из нескольких объектов
+// const video = ['youtube', 'vimeo'],
+//       blogs = ['wp', 'blogger'],
+//       internet = [...video, ...blogs, 'vk'];  //spread оператор для создание из нескольких объектов
 
-console.log(internet);
-
-
-
-function log (a,b,c){
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
-const gum = [2, 5, 7];
-
-log(...gum);  //оператор spread подставил массив в передаваемые аргументы функции
-
-
-const arrray = ['a', 'dd'];
-const newArrrray = [...arrray];  //spread оператор для создания массива из другого
-console.log(newArrrray); //spread оператор для 4й способа поверхностного копирования  массива
-
-
-const q = {
-    one: 1,
-    two: 2
-};
-
-const newObjj = {...q};   //spread оператор для 4й способа поверхностного копирования объекта
-console.log(newObjj);    // testing
+// console.log(internet);
 
 
 
-//practice #10
+// function log (a,b,c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+// const gum = [2, 5, 7];
 
-const personalPlanPeter = {
-    name: "Peter",
-    age: "29",
-    skills: {
-        languages: ['ru', 'eng'],
-        programmingLangs: {
-            js: '20%',
-            php: '10%'            
-        },
-        exp: '1 month'
-    },
-    showAgeAndLangs: function (plans){
-        let userAge = plans.age;
-        let softSkills = '';
-        let langSkills = '';
-        softSkills = plans.skills;    
-        langSkills = softSkills.languages;
-        let key;
-        let langRes = '';
-        for (key in langSkills){
-            langRes += langSkills[key].toUpperCase();
-            langRes += ' ';
-        }
-        // upLangs = langSkills.toUpperCase;
-        return `Мне ${userAge} и я владею языками: ${langRes}`;
-    }
-};
-console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
-let userExp;
-function showExperience(plan) {
-    userExp = plan.skills;
-    return userExp.exp;
-}
-let userSkills;
-function showProgrammingLangs(plan) {
-    let str = '';
-    const {programmingLangs} = plan.skills;
-    for (let key in programmingLangs){
-        str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
-    }
-    return str;
-}
-console.log(showProgrammingLangs(personalPlanPeter));
-console.log(showExperience(personalPlanPeter));
-// Обязательно решить задачку 3
-//lesson 36
-const soldier = {
-    health: 400,
-    armour: 100,
-    sayHello: function(){
-        console.log("Hello");
-    }
-};
-
-const john = Object.create(soldier); //Создаём объект и присваиваем ему прототип объекта выше
-
-john.sayHello(); //Все методы от прототипа будут работать для нового объекта
+// log(...gum);  //оператор spread подставил массив в передаваемые аргументы функции
 
 
-//new lesson
-//Типизация
-// input, textarea, prompt всё что приходит от пользователи - Строки
-
-//boolean
-//0, '', null, undefined, Nan  - это всё булиновое false
+// const arrray = ['a', 'dd'];
+// const newArrrray = [...arrray];  //spread оператор для создания массива из другого
+// console.log(newArrrray); //spread оператор для 4й способа поверхностного копирования  массива
 
 
-// ' ', " "  - не булиновое false, а строки  т.к. в них пробел
+// const q = {
+//     one: 1,
+//     two: 2
+// };
 
-//Логические преобразования
-
-let switcher = null;
-if (switcher){
-    console.log('Hello');  //не выведет, т.к. false  если 0(false) то не выполняется условие
-}
-
-switcher = 1;
-if (switcher){
-    console.log('Hello');  // в данном же случае условие выполнится т.к. switcher = 1 = true
-}
+// const newObjj = {...q};   //spread оператор для 4й способа поверхностного копирования объекта
+// console.log(newObjj);    // testing
 
 
-//Замыкание и лексическое окружение
 
-for (let i = 0; i < 9; i++){ debugger
-    let num = 0;
-    for (let j = 0; j < 10; j++){ debugger //поверить дебагер в хроме
-        num += 3;
-    }
-    console.log(num);
-}
+// //practice #10
 
-// проверка знаний
-console.log(2 && 1 && null && 0 && undefined); // "И" запинается на лжи, то бишь на null поэтом он и выводится
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'            
+//         },
+//         exp: '1 month'
+//     },
+//     showAgeAndLangs: function (plans){
+//         let userAge = plans.age;
+//         let softSkills = '';
+//         let langSkills = '';
+//         softSkills = plans.skills;    
+//         langSkills = softSkills.languages;
+//         let key;
+//         let langRes = '';
+//         for (key in langSkills){
+//             langRes += langSkills[key].toUpperCase();
+//             langRes += ' ';
+//         }
+//         // upLangs = langSkills.toUpperCase;
+//         return `Мне ${userAge} и я владею языками: ${langRes}`;
+//     }
+// };
+// console.log(personalPlanPeter.showAgeAndLangs(personalPlanPeter));
+// let userExp;
+// function showExperience(plan) {
+//     userExp = plan.skills;
+//     return userExp.exp;
+// }
+// let userSkills;
+// function showProgrammingLangs(plan) {
+//     let str = '';
+//     const {programmingLangs} = plan.skills;
+//     for (let key in programmingLangs){
+//         str += `Язык ${key} изучен на ${programmingLangs[key]}\n`;
+//     }
+//     return str;
+// }
+// console.log(showProgrammingLangs(personalPlanPeter));
+// console.log(showExperience(personalPlanPeter));
+// // Обязательно решить задачку 3
+// //lesson 36
+// const soldier = {
+//     health: 400,
+//     armour: 100,
+//     sayHello: function(){
+//         console.log("Hello");
+//     }
+// };
 
-console.log(!!(1 && 2) === (1 && 2)); //!! делает выражение булиновым. а во втором варианте возвращается 2
+// const john = Object.create(soldier); //Создаём объект и присваиваем ему прототип объекта выше
 
-console.log(1 && 2); //возвращается последнее значение при операторе && "И"
+// john.sayHello(); //Все методы от прототипа будут работать для нового объекта
 
-const a = [1, 2, 3]; 
-const b = [1, 2, 3]; 
-// Правда ли что a == b 
-// не равны, т.к. это 2 разных хранилища с разной инфой(хоть и данные схожи)
 
-console.log(0 || "" || 2 || undefined || true || falsе );
+// //new lesson
+// //Типизация
+// // input, textarea, prompt всё что приходит от пользователи - Строки
+
+// //boolean
+// //0, '', null, undefined, Nan  - это всё булиновое false
+
+
+// // ' ', " "  - не булиновое false, а строки  т.к. в них пробел
+
+// //Логические преобразования
+
+// let switcher = null;
+// if (switcher){
+//     console.log('Hello');  //не выведет, т.к. false  если 0(false) то не выполняется условие
+// }
+
+// switcher = 1;
+// if (switcher){
+//     console.log('Hello');  // в данном же случае условие выполнится т.к. switcher = 1 = true
+// }
+
+
+// //Замыкание и лексическое окружение
+
+// for (let i = 0; i < 9; i++){ debugger
+//     let num = 0;
+//     for (let j = 0; j < 10; j++){ debugger //поверить дебагер в хроме
+//         num += 3;
+//     }
+//     console.log(num);
+// }
+
+// // проверка знаний
+// console.log(2 && 1 && null && 0 && undefined); // "И" запинается на лжи, то бишь на null поэтом он и выводится
+
+// console.log(!!(1 && 2) === (1 && 2)); //!! делает выражение булиновым. а во втором варианте возвращается 2
+
+// console.log(1 && 2); //возвращается последнее значение при операторе && "И"
+
+// const a = [1, 2, 3]; 
+// const b = [1, 2, 3]; 
+// // Правда ли что a == b 
+// // не равны, т.к. это 2 разных хранилища с разной инфой(хоть и данные схожи)
+
+// console.log(0 || "" || 2 || undefined || true || falsе );
 
 //или запинается на правде, поэтому возвращается 2
+
+
+//lesson 46
+
+console.log(document.body.childNodes);
