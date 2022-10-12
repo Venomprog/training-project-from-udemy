@@ -578,7 +578,7 @@
 
 //practice recursion
 //watch lesson + conspect
-//Решить задачку по рекурсии!!!
+//Решить задачку по рекурсии!!
 
 
 
