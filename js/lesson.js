@@ -567,15 +567,43 @@
 
 // console.log(document.body.childNodes); //Выводит все узлы и ноды у Боди
 
-for (let node of document.body.childNodes){ //Цикл для каждой ноды в Бади
-    if (node.nodeName == '#text'){ // Если узел текстовы перенос, то переход к след эл-ту
-        continue;
-    }
-    console.log(node);
-}
+// for (let node of document.body.childNodes){ //Цикл для каждой ноды в Бади
+//     if (node.nodeName == '#text'){ // Если узел текстовы перенос, то переход к след эл-ту
+//         continue;
+//     }
+//     console.log(node);
+// }
 
-console.log(document.body.lastElementChild); //Выводит последнего ребёнка Бади
+// console.log(document.body.lastElementChild); //Выводит последнего ребёнка Бади
 
 //practice recursion
 //watch lesson + conspect
 //Решить задачку по рекурсии!!!
+
+
+
+//Рекурсия
+
+let students = {
+    js: [{
+            name: 'John',
+            progress: 100
+        }, {
+            name: 'Ivan',
+            progress: 60
+        }],
+
+    html: {
+        basic:[{
+            name: 'Peter',
+            progress: 20
+        }, {
+            name: 'Ann',
+            progress: 18
+        }],
+        pro:[{
+            name: 'Sam',
+            progres: 10
+        }]
+    }
+};
