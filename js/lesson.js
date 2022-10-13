@@ -611,7 +611,7 @@ let students = {
 function getTotalProgressByIteration (data){
     let total = 0;
     let students = 0;
-
+    //19^08
     return total/students;
 }
 
