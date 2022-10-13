@@ -607,3 +607,12 @@ let students = {
         }]
     }
 };
+
+function getTotalProgressByIteration (data){
+    let total = 0;
+    let students = 0;
+
+    return total/students;
+}
+
+console.log(getTotalProgressByIteration(students));
