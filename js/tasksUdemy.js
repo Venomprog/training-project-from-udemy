@@ -156,63 +156,88 @@
 //Значит в браузере у курса юдеми есть ошибка, которая неправильно добавляет в массивы значения
 
 
-// tasks 15
+// // tasks 15
 
-const restorantData = {
-    menu: [
-        {
-            name: 'Salad Caesar',
-            price: '14$'
-        },
-        {
-            name: 'Pizza Diavola',
-            price: '9$'
-        },
-        {
-            name: 'Beefsteak',
-            price: '17$'
-        },
-        {
-            name: 'Napoleon',
-            price: '7$'
-        }
-    ],
-    waitors: [
-        {name: 'Alice', age: 22}, {name: 'John', age: 24}
-    ],
-    averageLunchPrice: '20$',
-    openNow: true
-};
+// const restorantData = {
+//     menu: [
+//         {
+//             name: 'Salad Caesar',
+//             price: '14$'
+//         },
+//         {
+//             name: 'Pizza Diavola',
+//             price: '9$'
+//         },
+//         {
+//             name: 'Beefsteak',
+//             price: '17$'
+//         },
+//         {
+//             name: 'Napoleon',
+//             price: '7$'
+//         }
+//     ],
+//     waitors: [
+//         {name: 'Alice', age: 22}, {name: 'John', age: 24}
+//     ],
+//     averageLunchPrice: '20$',
+//     openNow: true
+// };
 
-function isOpen(prop) {
-    let answer = '';
-    prop ? answer = 'Открыто' : answer = 'Закрыто';
-    return answer;
-}
+// function isOpen(prop) {
+//     let answer = '';
+//     prop ? answer = 'Открыто' : answer = 'Закрыто';
+//     return answer;
+// }
 
-console.log(isOpen(restorantData));
-//1task complete
+// console.log(isOpen(restorantData));
+// //1task complete
 
-function isAverageLunchPriceTrue(fDish, sDish, average) {
-    if ((parseInt(fDish.price.slice(0, -1)) + parseInt(sDish.price.slice(0, -1))) < parseInt(average.slice(0, -1))){
-        return 'Цена ниже средней';
-    } else {       
-        return 'Цена выше средней';
-    } 
-}
+// function isAverageLunchPriceTrue(fDish, sDish, average) {
+//     if ((parseInt(fDish.price.slice(0, -1)) + parseInt(sDish.price.slice(0, -1))) < parseInt(average.slice(0, -1))){
+//         return 'Цена ниже средней';
+//     } else {       
+//         return 'Цена выше средней';
+//     } 
+// }
 
-console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+// console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
 
-function transferWaitors(data) {
-    const copy = Object.assign({}, data); //Именно вот так можно скопировать объект, без ссылок
+// function transferWaitors(data) {
+//     const copy = Object.assign({}, data); //Именно вот так можно скопировать объект, без ссылок
     
-    copy.waitors = [{name: 'Mike', age: 32}]; //Меняем вообще все значения на новый массив, не изменяя начальный объект
-    return copy;
-}
+//     copy.waitors = [{name: 'Mike', age: 32}]; //Меняем вообще все значения на новый массив, не изменяя начальный объект
+//     return copy;
+// }
 
-console.log(transferWaitors(restorantData));
-console.log(restorantData);
+// console.log(transferWaitors(restorantData));
+// console.log(restorantData);
 
 //practice done 3/3
 //teoretic practice on udemy, complete
 //reset styles because some trouble...
+
+
+
+
+// task №16 recursion
+
+
+function factorial(num) {
+    let result = 1;
+    if (typeof(num) != "number" || !Number.isInteger(num)){
+        return 'eror';
+    } else {
+        if (num <= 0){
+            return result;
+        } else {
+            if (num === 1){
+                return result*1;
+            } else {
+                return num*factorial(num-1);
+            }
+        }
+    }
+}
+
+console.log(factorial(0.25));
