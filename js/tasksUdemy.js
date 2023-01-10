@@ -225,16 +225,16 @@
 
 function factorial(num) {
     let result = 1;
-    if (typeof(num) != "number" || !Number.isInteger(num)){
+    if (typeof(num) != "number" || !Number.isInteger(num)){ //Проверка на строку и дробное число
         return 'eror';
     } else {
         if (num <= 0){
             return result;
         } else {
             if (num === 1){
-                return result*1;
+                return result*1; //База рекурсии
             } else {
-                return num*factorial(num-1);
+                return num*factorial(num-1);  //Рекурсия
             }
         }
     }
