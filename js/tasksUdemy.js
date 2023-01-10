@@ -220,7 +220,7 @@
 
 
 
-// task №16 recursion
+// task №16 recursion!
 
 
 function factorial(num) {
@@ -241,3 +241,5 @@ function factorial(num) {
 }
 
 console.log(factorial(0.25));
+
+// Task Complete!
