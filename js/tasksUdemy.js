@@ -206,7 +206,7 @@
 // function transferWaitors(data) {
 //     const copy = Object.assign({}, data); //Именно вот так можно скопировать объект, без ссылок
     
-//     copy.waitors = [{name: 'Mike', age: 32}]; //Меняем вообще все значения на новый массив, не изменяя начальный объект
+//     copy.waitors = [{name: 'Mike', age: 32}]; //Меняем вообще все значения на новый массив, не изменяя  объект
 //     return copy;
 // }
 
