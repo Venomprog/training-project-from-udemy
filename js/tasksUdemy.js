@@ -214,7 +214,7 @@
 // console.log(restorantData);
 
 //practice done 3/3
-//teoretic practice on udemy, complete
+//teoretic practice on udemy, complete!
 //reset styles because some trouble...
 
 
