@@ -220,7 +220,7 @@
 
 
 
-// task №16 recursion!
+// task №16 recursion!!!
 
 
 function factorial(num) {
