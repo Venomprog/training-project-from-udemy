@@ -279,8 +279,36 @@ console.log(2 + 2 * 2 !== 6);
 
 // console.log(doNothing() === undefined);
 
-// launch with notebook
 
-// не понятно почему с ноутбука не работает гит
+// const log = function(a, b, ...rest){
+//     console.log(a, b, rest)
+// }
 
-// возможно нужно загрузить через терминал именно сюда на ноут с гитхаба
+// log('1', '2', '3', '4', '5')
+
+
+// function calcOrDouble(number, basis = 2){
+//     console.log(number * basis)
+// }
+
+// calcOrDouble(3, 10)
+
+
+//Лёгкое глубокое клонирование с помощью JSON
+
+const persone = {
+    name: 'alex',
+    age: 18,
+    parents: {
+        mom: 'Ann',
+        dad: 'Mike'
+    }
+}
+
+
+const clone = JSON.parse(JSON.stringify(persone))
+
+clone.parents.mom = 'Alice'
+
+console.log(persone);
+console.log(clone);
