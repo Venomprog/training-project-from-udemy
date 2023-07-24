@@ -296,7 +296,7 @@ console.log(2 + 2 * 2 !== 6);
 
 //Лёгкое глубокое клонирование с помощью JSON
 
-const persone = {
+const persone = { //Создаём объект
     name: 'alex',
     age: 18,
     parents: {
@@ -308,7 +308,7 @@ const persone = {
 
 const clone = JSON.parse(JSON.stringify(persone)) //Глубокое клонирование через джсон
 
-clone.parents.mom = 'Alice'
+clone.parents.mom = 'Alice' // изменяем значение нового объекта и не перезаписываем при этом старое
 
 console.log(persone);
 console.log(clone);
