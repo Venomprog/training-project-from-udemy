@@ -306,7 +306,7 @@ const persone = {
 }
 
 
-const clone = JSON.parse(JSON.stringify(persone))
+const clone = JSON.parse(JSON.stringify(persone)) //Глубокое клонирование через джсон
 
 clone.parents.mom = 'Alice'
 
