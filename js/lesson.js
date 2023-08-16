@@ -673,3 +673,5 @@ function getTotalProgressByRecursion(data){
 const result = getTotalProgressByRecursion(students);
 
 console.log(result[0]/result[1]);
+
+//complete Swiper and some js libs
